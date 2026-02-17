@@ -1,0 +1,6 @@
+#!/Users/jmgarcia/GenAI_Platform_Engineering_Model/repo-intel-bundle-v2/.venv/bin/python3.12
+import sys
+from typer.cli import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())

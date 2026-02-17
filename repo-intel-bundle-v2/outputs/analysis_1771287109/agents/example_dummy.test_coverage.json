@@ -1,0 +1,14 @@
+{
+  "agent": "Test Coverage Agent",
+  "repo_slug": "example_dummy",
+  "timestamp": "2026-02-16T18:16:33.623421",
+  "testing_maturity": "Medium",
+  "gaps": [
+    "No CI pipeline found.",
+    "Tests exist but execution is not automated in CI."
+  ],
+  "backlog": [
+    "Create GitHub Actions workflow for linting and testing.",
+    "Automate existing tests in CI pipeline."
+  ]
+}

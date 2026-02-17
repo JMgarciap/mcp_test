@@ -1,0 +1,76 @@
+{
+  "project": "drawio_mcp_audit",
+  "created_at": "2026-02-17T04:33:56.160830",
+  "updated_at": "2026-02-17T04:33:57.910625",
+  "overall": {
+    "progress": 100,
+    "status": "COMPLETED"
+  },
+  "stages": {
+    "MCP_ANALYZE": {
+      "status": "COMPLETED",
+      "progress": 0
+    },
+    "AGENT_SECURITY": {
+      "status": "COMPLETED",
+      "progress": 0
+    },
+    "AGENT_TESTS": {
+      "status": "COMPLETED",
+      "progress": 0
+    },
+    "INTEGRATOR": {
+      "status": "COMPLETED",
+      "progress": 70
+    },
+    "AGILE_PLANNER": {
+      "status": "COMPLETED",
+      "progress": 0
+    },
+    "EXEC_ROADMAP": {
+      "status": "COMPLETED",
+      "progress": 0
+    },
+    "EFFORT_ESTIMATOR": {
+      "status": "COMPLETED",
+      "progress": 85
+    },
+    "SELLER_MODE": {
+      "status": "COMPLETED",
+      "progress": 90
+    },
+    "PUBLISH": {
+      "status": "COMPLETED",
+      "progress": 95
+    }
+  },
+  "repos": {
+    "drawio-mcp": {
+      "overall": {
+        "status": "PENDING"
+      },
+      "stages": {
+        "MCP_ANALYZE": "IN_PROGRESS"
+      },
+      "artifacts": []
+    },
+    "jgraph_drawio-mcp": {
+      "overall": {
+        "status": "PENDING"
+      },
+      "stages": {
+        "MCP_ANALYZE": "COMPLETED",
+        "AGENT_SECURITY": "COMPLETED",
+        "AGENT_TESTS": "COMPLETED"
+      },
+      "artifacts": [
+        "outputs/drawio_mcp_audit/agents/jgraph_drawio-mcp.vuln_detective.md",
+        "outputs/drawio_mcp_audit/agents/jgraph_drawio-mcp.vuln_detective.json",
+        "outputs/drawio_mcp_audit/repos/jgraph_drawio-mcp.json",
+        "outputs/drawio_mcp_audit/repos/jgraph_drawio-mcp.md",
+        "outputs/drawio_mcp_audit/agents/jgraph_drawio-mcp.test_coverage.md",
+        "outputs/drawio_mcp_audit/agents/jgraph_drawio-mcp.test_coverage.json"
+      ]
+    }
+  }
+}

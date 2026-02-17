@@ -1,0 +1,5 @@
+[
+    "https://github.com/fastapi/fastapi",
+    "https://github.com/pallets/flask",
+    "https://github.com/psf/requests"
+]

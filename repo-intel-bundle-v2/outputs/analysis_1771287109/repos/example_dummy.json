@@ -1,0 +1,34 @@
+{
+    "repo_url": "https://github.com/example/dummy",
+    "ref": "main",
+    "timestamp": "2026-02-17T00:00:00Z",
+    "metadata": {
+        "owner": "example",
+        "repo": "dummy",
+        "stars": 123
+    },
+    "scores": {
+        "quality": 75,
+        "cloud_readiness": 40,
+        "risk": 60
+    },
+    "signals": {
+        "has_readme": true,
+        "manifests_found": [
+            "package.json"
+        ],
+        "has_manifest": true,
+        "has_ci": false,
+        "has_tests": true,
+        "has_docker": true,
+        "dockerfile_issues": [
+            "Runs as root user"
+        ],
+        "has_lockfile": false,
+        "has_secrets_smell": true,
+        "potential_secrets_found": [
+            "AWS Access Key in config.py"
+        ]
+    },
+    "findings": []
+}

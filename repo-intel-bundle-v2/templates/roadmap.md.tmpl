@@ -1,0 +1,29 @@
+# Execution Roadmap
+> **Project:** {{ project_name }}
+> **Target Date:** {{ target_date }}
+
+## Phase 1: Quick Wins (Weeks 1-4)
+**Focus:** Immediate risk mitigation and low-hanging fruit.
+
+{% for item in phase_1 %}
+- [ ] **{{ item.category }}**: {{ item.task }} ({{ item.effort }} pts)
+{% endfor %}
+
+## Phase 2: Stabilization (Weeks 5-12)
+**Focus:** Paying down technical debt and improving reliability.
+
+{% for item in phase_2 %}
+- [ ] **{{ item.category }}**: {{ item.task }} ({{ item.effort }} pts)
+{% endfor %}
+
+## Phase 3: Modernization (Weeks 13+)
+**Focus:** Architectural improvements and future-proofing.
+
+{% for item in phase_3 %}
+- [ ] **{{ item.category }}**: {{ item.task }} ({{ item.effort }} pts)
+{% endfor %}
+
+## Key Milestones
+{% for milestone in milestones %}
+- **{{ milestone.date }}**: {{ milestone.name }}
+{% endfor %}

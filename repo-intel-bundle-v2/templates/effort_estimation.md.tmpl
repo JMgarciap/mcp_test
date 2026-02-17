@@ -1,0 +1,32 @@
+# Effort & Resource Estimation
+> **Generated on:** {{ date }}
+
+## Executive Summary
+This estimation is based on the analysis of **{{ repo_count }}** repositories and **{{ finding_count }}** unique findings.
+
+| Metric | Estimate |
+| :--- | :--- |
+| **Total Story Points** | {{ total_story_points }} |
+| **Estimated Duration** | {{ estimated_duration_months }} months |
+| **Confidence Level** | {{ confidence_level }} |
+
+## Resource Estimation
+Recommended team composition for successful delivery:
+
+| Role | Count | Utilization |
+| :--- | :--- | :--- |
+| Backend Engineers | {{ resources.backend }} | 100% |
+| DevOps Engineers | {{ resources.devops }} | {{ resources.devops_util }}% |
+| Security Engineers | {{ resources.security }} | {{ resources.security_util }}% |
+| QA Engineers | {{ resources.qa }} | 100% |
+| Architects | {{ resources.architect }} | 50% |
+
+## Complexity Classificaton
+- **Low Complexity Items**: {{ complexity.low }}
+- **Medium Complexity Items**: {{ complexity.medium }}
+- **High Complexity Items**: {{ complexity.high }}
+
+## Methodology
+Estimates are derived using heuristic analysis of code volume, cyclomatic complexity signals, and security risk density.
+- **1 Story Point** ~= 1 Ideal Developer Day (conservative)
+- **Velocity assumed**: {{ velocity }} pts / sprint

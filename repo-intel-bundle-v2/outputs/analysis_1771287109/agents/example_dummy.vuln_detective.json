@@ -1,0 +1,42 @@
+{
+  "agent": "Vulnerability Detective",
+  "repo_slug": "example_dummy",
+  "timestamp": "2026-02-16T18:16:33.595357",
+  "security_score": 50,
+  "risk_level": "High",
+  "findings": [
+    {
+      "title": "Secrets Detected in Codebase",
+      "severity": "High",
+      "description": "Potential hardcoded secrets found.",
+      "evidence": [
+        "AWS Access Key in config.py"
+      ]
+    },
+    {
+      "title": "Container Runs as Root",
+      "severity": "Medium",
+      "description": "Dockerfile is configured to run as root, increasing attack surface.",
+      "evidence": [
+        "Dockerfile"
+      ]
+    },
+    {
+      "title": "Missing Dependencies Lockfile",
+      "severity": "Low",
+      "description": "No lockfile found, risking dependency confusion attacks or breaking changes.",
+      "evidence": []
+    }
+  ],
+  "remediation_plan": {
+    "immediate": [
+      "Revoke exposed secrets immediately."
+    ],
+    "short_term": [
+      "Implement git-secrets or similar pre-commit hooks.",
+      "Update Dockerfile to creating a non-root user.",
+      "Generate lockfile (e.g., pip freeze > requirements.txt or poetry lock)."
+    ],
+    "long_term": []
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "project": "jmgp_audit",
+  "created_at": "2026-02-17T03:16:25.013810",
+  "updated_at": "2026-02-17T03:16:28.778656",
+  "overall": {
+    "progress": 100,
+    "status": "COMPLETED"
+  },
+  "stages": {
+    "MCP_ANALYZE": {
+      "status": "COMPLETED",
+      "progress": 50
+    },
+    "AGENT_SECURITY": {
+      "status": "COMPLETED",
+      "progress": 0
+    },
+    "AGENT_TESTS": {
+      "status": "COMPLETED",
+      "progress": 0
+    },
+    "INTEGRATOR": {
+      "status": "COMPLETED",
+      "progress": 70
+    },
+    "AGILE_PLANNER": {
+      "status": "COMPLETED",
+      "progress": 0
+    },
+    "EXEC_ROADMAP": {
+      "status": "COMPLETED",
+      "progress": 0
+    },
+    "EFFORT_ESTIMATOR": {
+      "status": "COMPLETED",
+      "progress": 85
+    },
+    "SELLER_MODE": {
+      "status": "COMPLETED",
+      "progress": 90
+    },
+    "PUBLISH": {
+      "status": "COMPLETED",
+      "progress": 95
+    }
+  },
+  "repos": {
+    "fastapi": {
+      "overall": {
+        "status": "PENDING"
+      },
+      "stages": {
+        "MCP_ANALYZE": "FAILED"
+      },
+      "artifacts": []
+    },
+    "flask": {
+      "overall": {
+        "status": "PENDING"
+      },
+      "stages": {
+        "MCP_ANALYZE": "IN_PROGRESS"
+      },
+      "artifacts": []
+    },
+    "pallets_flask": {
+      "overall": {
+        "status": "PENDING"
+      },
+      "stages": {
+        "MCP_ANALYZE": "COMPLETED",
+        "AGENT_SECURITY": "COMPLETED",
+        "AGENT_TESTS": "COMPLETED"
+      },
+      "artifacts": [
+        "outputs/jmgp_audit/agents/pallets_flask.test_coverage.json",
+        "outputs/jmgp_audit/repos/pallets_flask.md",
+        "outputs/jmgp_audit/agents/pallets_flask.vuln_detective.md",
+        "outputs/jmgp_audit/agents/pallets_flask.vuln_detective.json",
+        "outputs/jmgp_audit/agents/pallets_flask.test_coverage.md",
+        "outputs/jmgp_audit/repos/pallets_flask.json"
+      ]
+    }
+  }
+}

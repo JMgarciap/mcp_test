@@ -1,0 +1,73 @@
+{
+  "project": "mcp_test_project",
+  "created_at": "2026-02-17T05:14:18.801863",
+  "updated_at": "2026-02-17T05:14:21.787452",
+  "overall": {
+    "progress": 100,
+    "status": "COMPLETED"
+  },
+  "stages": {
+    "MCP_ANALYZE": {
+      "status": "COMPLETED",
+      "progress": 0
+    },
+    "AGENT_SECURITY": {
+      "status": "COMPLETED",
+      "progress": 0
+    },
+    "AGENT_TESTS": {
+      "status": "PENDING",
+      "progress": 0
+    },
+    "INTEGRATOR": {
+      "status": "PENDING",
+      "progress": 0
+    },
+    "AGILE_PLANNER": {
+      "status": "PENDING",
+      "progress": 0
+    },
+    "EXEC_ROADMAP": {
+      "status": "PENDING",
+      "progress": 0
+    },
+    "EFFORT_ESTIMATOR": {
+      "status": "PENDING",
+      "progress": 0
+    },
+    "SELLER_MODE": {
+      "status": "COMPLETED",
+      "progress": 90
+    },
+    "PUBLISH": {
+      "status": "COMPLETED",
+      "progress": 95
+    }
+  },
+  "repos": {
+    "flask": {
+      "overall": {
+        "status": "PENDING"
+      },
+      "stages": {
+        "MCP_ANALYZE": "IN_PROGRESS"
+      },
+      "artifacts": []
+    },
+    "pallets_flask": {
+      "overall": {
+        "status": "PENDING"
+      },
+      "stages": {
+        "MCP_ANALYZE": "COMPLETED",
+        "AGENT_SECURITY": "COMPLETED"
+      },
+      "artifacts": [
+        "outputs/mcp_test_project/agents/pallets_flask.vuln_detective.md",
+        "outputs/mcp_test_project/repos/pallets_flask.md",
+        "outputs/mcp_test_project/repos/pallets_flask.json",
+        "outputs/mcp_test_project/agents/pallets_flask.vuln_detective.json"
+      ]
+    }
+  }
+}
