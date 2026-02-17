@@ -1,2 +1,0 @@
-[console_scripts]
-repo-intel = repo_intel_bundle_v2.server:main
