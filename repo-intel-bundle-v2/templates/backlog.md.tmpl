@@ -1,0 +1,39 @@
+# Agile Delivery Backlog
+> **Project:** {{ project_name }}
+> **Date:** {{ date }}
+
+## Problem Framing
+### Technical Problems Detected
+{% for finding in technical_problems %}
+- [ ] **{{ finding.category }}**: {{ finding.description }}
+{% endfor %}
+
+### Risk Areas
+{% for risk in risk_areas %}
+- [!] **{{ risk.severity }}**: {{ risk.description }}
+{% endfor %}
+
+---
+
+## Epics & Features
+
+{% for epic in epics %}
+### Epic: {{ epic.name }}
+_{{ epic.description }}_
+
+**Features:**
+{% for feature in epic.features %}
+#### Feature: {{ feature.name }}
+- **User Stories**:
+{% for story in feature.stories %}
+  - [ ] **{{ story.id }}**: As a {{ story.role }} I want {{ story.goal }} so that {{ story.benefit }} (Priority: {{ story.priority }})
+{% endfor %}
+{% endfor %}
+
+---
+{% endfor %}
+
+## Unprioritized Backlog
+{% for item in backlog %}
+- [ ] {{ item }}
+{% endfor %}

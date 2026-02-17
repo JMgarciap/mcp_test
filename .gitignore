@@ -1,0 +1,17 @@
+# Python
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+
+# Mac
+**/.DS_Store
+
+# Project Artifacts
+**/outputs/
+**/*.zip
+
+# Environment Variables
+**/.env
+**/.env.*
